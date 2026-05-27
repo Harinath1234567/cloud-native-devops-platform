@@ -29,8 +29,8 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push harinath641/cloud-native-devops:v1
-                - name: Deploy to EC2
 
+      - name: Deploy to EC2
         uses: appleboy/ssh-action@v1.0.3
 
         with:
