@@ -28,6 +28,10 @@ resource "aws_instance" "docker_server" {
 
   ami           = var.ami
   instance_type = var.instance_type
+ feature/add-devops-banner
+  key_name      = "devops-key"
+
+ main
 
   security_groups = [aws_security_group.web_sg.name]
 
